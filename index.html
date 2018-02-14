@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Convertisseur</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <form>
+  <div class="box">
+    <div class="titleBox">
+      <h1 class="title">convertisseur infirmiere</h1>
+    </div>
+    <div class="box_partie">
+      <div class="partie partie1">
+        <div class="left">
+          <p class="title2">VOLUME/POIDS</p>
+        </div>
+        <div class="right">
+          <div class="center">
+            <div class="volume">
+              <input type="number" class="input volumeP" name="volumeP">
+              <select name="volumeU" id="select1" class="select">
+                <option value="1">ML</option>
+                <option value="2">CL</option>
+                <option value="3">DL</option>
+                <option value="4">L</option>
+                <option value="5">DAL</option>
+                <option value="6">HL</option>
+                <option value="7">KL</option>
+              </select>
+            </div>
+            <div class="poids">
+              <input type="number" class="input poidsV" name="poidsV">
+              <select name="poidsU" id="select2" class="select">
+                <option value="1">MG</option>
+                <option value="2">CG</option>
+                <option value="3">DG</option>
+                <option value="4">G</option>
+                <option value="5">DAG</option>
+                <option value="6">HG</option>
+                <option value="7">KG</option>
+              </select>
+            </div>
+            <div class="egal">=</div>
+          </div>
+          <div class="calcul">
+            <button type="button" class="buttonCalcul button1">Calculer</button>
+            <p class="result">Résultat: <span class="result1"></span><span class="unit1"></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="partie partie2">
+        <div class="left">
+          <p class="title2">VOLUME<sup>3</sup>/POIDS</p>
+        </div>
+        <div class="right">
+          <div class="center">
+            <div class="volume">
+              <input type="number" class="input volume3P" name="volume3P">
+              <select name="volume3U" id="select3" class="select">
+                <option value="1">MM3</option>
+                <option value="4">CM3</option>
+                <option value="7">DM3</option>
+                <option value="10">M3</option>
+              </select>
+            </div>
+            <div class="poids">
+              <input type="number" class="input poidsV3" name="poids2V">
+              <select name="poids2U" id="select4" class="select">
+                <option value="1">MG</option>
+                <option value="2">CG</option>
+                <option value="3">DG</option>
+                <option value="4">G</option>
+                <option value="5">DAG</option>
+                <option value="6">HG</option>
+                <option value="7">KG</option>
+              </select>
+            </div>
+            <div class="egal">=</div>
+          </div>
+          <div class="calcul">
+            <button type="button" class="buttonCalcul button2">Calculer</button>
+            <p class="result">Résultat: <span class="result2"></span><span class="unit2"></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="partie partie3">
+        <div class="left">
+          <p class="title2">VOLUME/VOLUME<sup>3</sup></p>
+        </div>
+        <div class="right">
+          <div class="center">
+            <div class="volume">
+              <input type="number" class="input volumeV3" name="volumeV3">
+              <select name="volumeU" id="select5" class="select">
+                <option value="3">ML</option>
+                <option value="4">CL</option>
+                <option value="5">DL</option>
+                <option value="6">L</option>
+                <option value="7">DAL</option>
+                <option value="8">HL</option>
+                <option value="9">KL</option>
+              </select>
+            </div>
+            <div class="poids">
+              <input type="number" class="input v3Volume" name="v3Volume">
+              <select name="volumeU" id="select6" class="select">
+                <option value="0">MM3</option>
+                <option value="3">CM3</option>
+                <option value="6">DM3</option>
+                <option value="9">M3</option>
+              </select>
+            </div>
+            <div class="egal">=</div>
+          </div>
+          <div class="calcul">
+            <button type="button" class="buttonCalcul button3">Calculer</button>
+            <p class="result">Résultat: <span class="result3"></span><span class="unit3"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input type="reset" class="buttonReset"></input>
+  </div>
+</form>
+<script src="./js/script.js"></script>
+</body>
+</html>
