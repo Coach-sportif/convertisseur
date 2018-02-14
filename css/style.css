@@ -125,6 +125,9 @@ body{
 }
 
 @media (max-width: 600px){
+  .box{
+    width: 360px;
+  }
   .title{
     font-size: 22px;
   }

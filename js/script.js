@@ -70,7 +70,8 @@ function calculer(e){
               result = poidsV / 1000;
             }
           }
-          result1.innerHTML = result;
+          result = parseInt(result);
+          result1.innerHTML = result.toFixed(3);
         }
         calcul1();
       break;
@@ -111,7 +112,8 @@ function calculer(e){
           result = poidsV3;
         }
       }
-      result2.innerHTML = result;
+      result = parseInt(result);
+      result2.innerHTML = result.toFixed(3);
     }
       calcul2();
       break;
@@ -147,7 +149,8 @@ function calculer(e){
           result = v3Volume;
         }
       }
-      result3.innerHTML = result;
+      result = parseInt(result);
+      result3.innerHTML = result.toFixed(3);
     }
     calcul3();
       break;
